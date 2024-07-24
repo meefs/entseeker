@@ -16,7 +16,7 @@ entseeker is a command-line tool for Named Entity Recognition (NER) and web enti
 
 2. Clone this repository:
    ```
-   git clone https://github.com/yourusername/entseeker.git
+   git clone https://github.com/meefs/entseeker.git
    cd entseeker
    ```
 
