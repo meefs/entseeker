@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Filename: comprehensive_ner_search.py
+# Filename: ents.py
 
 import spacy
 from spacy.matcher import Matcher
