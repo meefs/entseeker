@@ -1,4 +1,4 @@
-# entseeker
+# entseeker 
 
 entseeker is a command-line tool for Named Entity Recognition (NER) and web entity searches in text files. It uses spaCy's NLP capabilities for standard named entities and custom rules for web-related entities.
 
@@ -22,7 +22,7 @@ entseeker is a command-line tool for Named Entity Recognition (NER) and web enti
 
 3. Install the required dependency:
    ```
-   pip install spacy
+   pip install -r requirements.txt
    ```
 
 4. Download a spaCy model (the script uses "en_core_web_sm" by default):
@@ -102,32 +102,32 @@ python ents.py <input_file> [options]
 
 1. Search for all entities in a file:
    ```
-   python ents.py input.txt
+   python ents.py sample.txt
    ```
 
 2. Search for specific entity types:
    ```
-   python ents.py input.txt --entities PERSON ORG
+   python ents.py sample.txt --entities PERSON ORG
    ```
 
 3. Use predefined entity type bundles:
    ```
-   python ents.py input.txt --types people places web
+   python ents.py sample.txt --types people places web
    ```
 
 4. Use a different spaCy model:
    ```
-   python ents.py input.txt --model en_core_web_lg
+   python ents.py sample.txt --model en_core_web_lg
    ```
 
 5. Output results to a CSV file:
    ```
-   python ents.py input.txt --csv output.csv
+   python ents.py sample.txt --csv output.csv
    ```
 
 6. Combine multiple options:
    ```
-   python ents.py input.txt --model en_core_web_md --types people organizations web --csv output.csv
+   python ents.py sample.txt --model en_core_web_md --types people organizations web --csv output.csv
    ```
 
 ## Contributing
